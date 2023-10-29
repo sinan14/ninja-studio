@@ -1,0 +1,21 @@
+.playlist_body {
+  .container {
+    padding-right: 48px;
+  }
+  .playlist_songs {
+    margin-top: 20px;
+    color: white;
+  }
+  .playlist_song-box {
+    background-color: #191d31;
+    padding: 9px 10px;
+    .queue_item-action {
+      gap: 24px;
+      padding-right: 32px;
+    }
+    color: #333;
+    .queue_name {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+section.latest_release,
+section.popular_artists,
+section.genres,
+section.latest_english,
+section.latest_hindi,
+section.categories {
+  // width: 900px;
+  margin-right: 96px;
+}
+
+section.latest_release {
+  color: #fff;
+  margin-top: 32px;
+  padding-right: 96px;
+  .latest_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .latest_item {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    // background: red;
+  }
+}
+.album_img-box {
+  width: 80px;
+  height: 64px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./../assets/naattu.jpg);
+}
+.album_data-box,
+.album_duration-box {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sub_heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: white;
+}

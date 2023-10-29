@@ -1,0 +1,42 @@
+section.latest_english,
+section.latest_hindi {
+  color: white;
+  margin-top: 32px;
+  overflow: hidden;
+}
+
+.latest_songs-list {
+  gap: 12px;
+  overflow-x: auto; /* Use 'auto' instead of 'scroll' */
+  white-space: nowrap; /* Prevent items from wrapping to new lines */
+  &::-webkit-scrollbar {
+    display: none; /* Hide the default scrollbar */
+  }
+  .latest_song {
+    flex: 0 0 128px;
+    gap: 6px;
+    // width: 128px;
+  }
+  .song_name {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .song_release-date {
+    font-size: 12px;
+    font-weight: 400;
+    color: lightgray;
+  }
+  .cover_photo {
+    width: 128px;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./../assets/faded.jpg);
+  }
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

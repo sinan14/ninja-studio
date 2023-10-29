@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  /* This defines what 1rem is */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  // background: linear-gradient(to bottom, #050a30, #0c2d48) no-repeat;
+  background-color: #040827;
+}
+main {
+  display: grid;
+  padding: 0 128px;
+  // margin-top: 124px;
+  grid-template-columns: repeat(20, 1fr);
+}
+.container {
+  grid-column: 1/16;
+}
+.aside {
+  grid-column: 16/-1;
+}
+.flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+}

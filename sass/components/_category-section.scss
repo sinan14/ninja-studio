@@ -1,0 +1,15 @@
+section.categories {
+  margin-top: 32px;
+  justify-content: space-between;
+}
+.category_box {
+  width: 32%;
+  height: 170px;
+  // border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}

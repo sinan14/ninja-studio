@@ -1,0 +1,37 @@
+// genres
+
+section.genres {
+  margin-top: 32px;
+  height: 140px;
+  background-color: #080f41;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.genre_img {
+  background-image: url(./../assets/music-love.jpg);
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  font-weight: 500;
+
+  text-align: center;
+  flex: 0 0 100px;
+}
+.genre-main {
+  height: 100%;
+  flex: 0 0 128px;
+  margin-right: 24px;
+
+  img {
+    width: 128px;
+    height: 100px;
+    margin-left: 24px;
+  }
+}

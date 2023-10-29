@@ -1,0 +1,78 @@
+.playlist_hero-box {
+  max-width: 100%;
+  color: white;
+
+  .hero_img {
+    width: 111%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./../assets/music-band.jpg);
+  }
+  .hero_data {
+    padding: 64px 0 64px 24px;
+  }
+  .hero_heading {
+    justify-content: space-between;
+    padding-right: 16px;
+    margin-bottom: 6px;
+    h2 {
+      font-weight: 600;
+      font-size: 24px;
+    }
+    h6 {
+      font-size: 14px;
+      color: rgb(189, 171, 171);
+    }
+  }
+  .hero_subscript {
+    color: rgb(189, 171, 171);
+    margin-bottom: 8px;
+
+    font-size: 14px;
+  }
+  .hero_description {
+    color: #b8b6b6;
+    font-size: 14px;
+    margin-bottom: 48px;
+  }
+  .hero_action {
+    gap: 32px;
+    margin-bottom: 12px;
+    button {
+      border: none;
+      padding: 10px 32px;
+      outline: none;
+      color: white;
+      letter-spacing: 0.5px;
+      font-size: 13.5px;
+    }
+  }
+  button.playall {
+    background-image: linear-gradient(to right, #ff00cc 0%, #333399 100%);
+  }
+  button.follow {
+    background: none;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+  .album_count {
+    color: lightgray;
+    font-size: 12.5px;
+  }
+}
+
+// .btn-grad {
+//     background-image: linear-gradient(to right, #ff00cc 0%, #333399  51%, #ff00cc  100%);
+//     margin: 10px;
+//     padding: 15px 45px;
+//     text-align: center;
+//     text-transform: uppercase;
+//     transition: 0.5s;
+//     background-size: 200% auto;
+//     color: white;
+//     box-shadow: 0 0 20px #eee;
+//     border-radius: 10px;
+//     display: block;
+//   }

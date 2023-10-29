@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist</title>
+    <script
+      src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="playlist_body">
+    <header class="header">
+      <div class="side_left">
+        <div class="logo_box">
+          <img
+            src="./assets/icons8-amazon-music-144.png"
+            class="logo"
+            alt="logo"
+          />
+          <span class="logo_name">Ninja Studio</span>
+        </div>
+        <nav class="nav"><span>Favorites</span></nav>
+      </div>
+      <div class="side_right">
+        <div id="search-bar">
+          <i id="search-icon" class="fa fa-search"></i>
+          <input id="search-input" placeholder="Search" />
+          <i id="mic-icon" class="fa-solid fa-microphone"></i>
+        </div>
+        <span class="bell_icon">
+          <i class="fa-solid fa-bell red_dot"></i>
+        </span>
+        <span>
+          <img
+            class="pro_pic"
+            src="./assets/image-avatar.png"
+            alt="profile photo"
+          />
+        </span>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="playlist_hero-box flex">
+          <div class="hero_img"></div>
+          <div class="hero_data flex flex-col">
+            <div class="hero_heading flex align-items-center">
+              <h2>ColdPlay</h2>
+              <h6>851 Followers</h6>
+            </div>
+            <p class="hero_subscript">British Band</p>
+            <p class="hero_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+              sapiente provident sed asperiores, ex numquam expedita natus
+              voluptatem cupiditate quaerat dolores dolor rem incidunt delectus
+              recusandae laborum. Ad, autem iste.
+            </p>
+            <div class="hero_action flex">
+              <button class="playall">Play All</button>
+              <button class="follow">Follow</button>
+            </div>
+            <p class="album_count">247 Track | 128 Albums</p>
+          </div>
+        </section>
+        <section class="playlist_songs">
+          <ul class="queue_list flex flex-col playlist_songs-list">
+            <li
+              class="queue_list-item flex align-items-center playlist_song-box"
+            >
+              <div class="queue_item-data flex align-items-center">
+                <span class="queue_num">01</span>
+                <span class="queue_img"> </span>
+                <span class="flex flex-col">
+                  <h3 class="queue_name">Mirage</h3>
+                  <span class="queue_singer">Else</span>
+                </span>
+              </div>
+              <div class="queue_item-action flex">
+                <i class="far fa-heart"></i>
+                <i class="far fa-plus"></i>
+              </div>
+            </li>
+            <li
+              class="queue_list-item flex align-items-center playlist_song-box"
+            >
+              <div class="queue_item-data flex align-items-center">
+                <span class="queue_num">02</span>
+                <span class="queue_img"> </span>
+                <span class="flex flex-col">
+                  <h3 class="queue_name">Worry Bout Us</h3>
+                  <span class="queue_singer">Rosie Lowe</span>
+                </span>
+              </div>
+              <div class="queue_item-action flex">
+                <i class="far fa-heart"></i>
+                <i class="far fa-plus"></i>
+              </div>
+            </li>
+            <li
+              class="queue_list-item flex align-items-center playlist_song-box"
+            >
+              <div class="queue_item-data flex align-items-center">
+                <span class="queue_num">03</span>
+                <span class="queue_img"> </span>
+                <span class="flex flex-col">
+                  <h3 class="queue_name">New Skin</h3>
+                  <span class="queue_singer">Flume</span>
+                </span>
+              </div>
+              <div class="queue_item-action flex">
+                <i class="far fa-heart"></i>
+                <i class="far fa-plus"></i>
+              </div>
+            </li>
+            <li
+              class="queue_list-item flex align-items-center playlist_song-box"
+            >
+              <div class="queue_item-data flex align-items-center">
+                <span class="queue_num">02</span>
+                <span class="queue_img"> </span>
+                <span class="flex flex-col">
+                  <h3 class="queue_name">Worry Bout Us</h3>
+                  <span class="queue_singer">Rosie Lowe</span>
+                </span>
+              </div>
+              <div class="queue_item-action flex">
+                <i class="far fa-heart"></i>
+                <i class="far fa-plus"></i>
+              </div>
+            </li>
+            <li
+              class="queue_list-item flex align-items-center playlist_song-box"
+            >
+              <div class="queue_item-data flex align-items-center">
+                <span class="queue_num">03</span>
+                <span class="queue_img"> </span>
+                <span class="flex flex-col">
+                  <h3 class="queue_name">New Skin</h3>
+                  <span class="queue_singer">Flume</span>
+                </span>
+              </div>
+              <div class="queue_item-action flex">
+                <i class="far fa-heart"></i>
+                <i class="far fa-plus"></i>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <aside class="aside queue_section">
+        <section class="latest_release">
+          <div class="queue_heading_box flex">
+            <h2 class="queue_heading">Similar Artists</h2>
+
+            <span class="queue_dropdown-btn flex align-items-center color-gray"
+              >View all
+            </span>
+          </div>
+
+          <ul class="latest_list">
+            <li class="latest_item">
+              <span class="album_img-box"> </span>
+              <span class="flex flex-col album_data-box">
+                <h5>Pop Band</h5>
+                <span>Imagine Dragons</span>
+              </span>
+              <span class="flex flex-col album_duration-box">
+                <span>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+                <span>4:44</span>
+              </span>
+            </li>
+            <li class="latest_item">
+              <span class="album_img-box"> </span>
+              <span class="flex flex-col album_data-box">
+                <h5>Pop Band</h5>
+                <span>Imagine Dragons</span>
+              </span>
+              <span class="flex flex-col align-items-center album_duration-box">
+                <span>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+                <span>4:44</span>
+              </span>
+            </li>
+            <li class="latest_item">
+              <span class="album_img-box"> </span>
+              <span class="flex flex-col album_data-box">
+                <h5>Pop Band</h5>
+                <span>Imagine Dragons</span>
+              </span>
+              <span class="flex flex-col album_duration-box">
+                <span>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+                <span>4:44</span>
+              </span>
+            </li>
+            <li class="latest_item">
+              <span class="album_img-box"> </span>
+              <span class="flex flex-col album_data-box">
+                <h5>Pop Band</h5>
+                <span>Imagine Dragons</span>
+              </span>
+              <span class="flex flex-col album_duration-box">
+                <span>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+                <span>4:44</span>
+              </span>
+            </li>
+          </ul>
+        </section>
+        <div class="queue_heading_box flex">
+          <h2 class="queue_heading">Recently Played</h2>
+
+          <span class="queue_dropdown-btn flex align-items-center color-gray"
+            >View all
+          </span>
+        </div>
+
+        <ul class="queue_list flex flex-col">
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <div class="audio-player-box">
+      <!-- <audio controls>
+        <source
+          src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+      <div style="width: 50px; height: 50px"></div> -->
+      <div class="audio-player">
+        <div class="timeline">
+          <div class="progress"></div>
+        </div>
+        <div class="controls">
+          <div class="play-container">
+            <div class="toggle-play play"></div>
+          </div>
+          <div class="time">
+            <div class="current">0:00</div>
+            <div class="divider">/</div>
+            <div class="length"></div>
+          </div>
+          <div class="name">Broken angel</div>
+          <!--     credit for icon to https://saeedalipoor.github.io/icono/ -->
+          <div class="volume-container">
+            <div class="volume-button">
+              <div class="volume">
+                <i
+                  style="display: none"
+                  id="mute-icon"
+                  class="fa fa-volume-up"
+                  aria-hidden="true"
+                ></i>
+                <i id="volume-on-icon" class="fa-solid fa-volume-xmark"></i>
+              </div>
+            </div>
+
+            <div class="volume-slider">
+              <div class="volume-percentage"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/audioplayer.js"></script>
+  </body>
+</html>

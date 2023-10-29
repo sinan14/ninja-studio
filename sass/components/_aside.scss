@@ -1,0 +1,100 @@
+.queue {
+  &_section {
+    color: white;
+  }
+  &_heading_box {
+    position: relative;
+    margin-bottom: 24px;
+    justify-content: space-between;
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .queue_dropdown-btn {
+      gap: 16px;
+      color: #00ffca;
+    }
+  }
+  &_list {
+    gap: 24px;
+    &-item {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  &_item-data {
+    gap: 12px;
+  }
+  &_img {
+    height: 48px;
+    width: 48px;
+    border-radius: 3px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./../assets/faded.jpg);
+  }
+  &_singer,
+  &_num,
+  &_list .queue_item-action {
+    color: darkgray;
+  }
+  &_list .queue_item-action:hover {
+    color: #00ffca;
+    transform: scale(1.1);
+  }
+  &_name {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  &_num {
+    font-size: 14px;
+  }
+  &_singer {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+.playlist_body aside {
+  section.latest_release {
+    padding-right: 0;
+    margin: 0 0 24px 0;
+    .latest_list {
+      grid-template-columns: 1fr !important;
+    }
+    .album_img-box {
+      width: 90px;
+      border-radius: 2px;
+      height: 100px;
+    }
+    .latest_item {
+      grid-template-columns: 33% 50% 17%;
+    }
+    .album_data-box {
+      gap: 10px;
+      font-size: 12px;
+      flex-direction: column-reverse;
+      h5 {
+        color: #aba8a8e1 !important;
+        font-size: 12px;
+      }
+      span {
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.2px;
+      }
+    }
+    .album_duration-box {
+      align-items: flex-end;
+      justify-content: flex-start;
+      margin-top: 3px;
+      gap: 3px;
+      font-size: 14px;
+      color: #999;
+    }
+  }
+}
+.color-gray {
+  color: #aba8a8 !important;
+  font-size: 14px;
+}

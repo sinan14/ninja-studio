@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ninja Studio</title>
+    <script
+      src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="side_left">
+        <div class="logo_box">
+          <img
+            src="./assets/icons8-amazon-music-144.png"
+            class="logo"
+            alt="logo"
+          />
+          <span class="logo_name">Ninja Studio</span>
+        </div>
+        <nav class="nav"><span>Favorites</span></nav>
+      </div>
+      <div class="side_right">
+        <div id="search-bar">
+          <i id="search-icon" class="fa fa-search"></i>
+          <input id="search-input" placeholder="Search" />
+          <i id="mic-icon" class="fa-solid fa-microphone"></i>
+        </div>
+        <span class="bell_icon">
+          <i class="fa-solid fa-bell red_dot"></i>
+        </span>
+        <span>
+          <img
+            class="pro_pic"
+            src="./assets/image-avatar.png"
+            alt="profile photo"
+          />
+        </span>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="carousel">
+          <div class="carousel-item">
+            <div class="red"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="green"></div>
+          </div>
+        </section>
+        <section class="latest_release">
+          <h2 class="sub_heading">Latest Release</h2>
+          <ul class="latest_list">
+            <li class="latest_item">
+              <span class="album_img-box"> </span>
+              <span class="flex flex-col album_data-box">
+                <h5>Onism</h5>
+                <span>AUG 11,2017</span>
+              </span>
+              <span class="flex flex-col album_data-box album_duration-box">
+                <span>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+                <span>4:44</span>
+              </span>
+            </li>
+            <li class="latest_item">
+              <span class="album_img-box"> </span>
+              <span class="flex flex-col album_data-box">
+                <h5>Onism</h5>
+                <span>AUG 11,2017</span>
+              </span>
+              <span class="flex flex-col align-items-center album_duration-box">
+                <span>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+                <span>4:44</span>
+              </span>
+            </li>
+            <li class="latest_item">
+              <span class="album_img-box"> </span>
+              <span class="flex flex-col album_data-box">
+                <h5>Onism</h5>
+                <span>AUG 11,2017</span>
+              </span>
+              <span class="flex flex-col album_duration-box">
+                <span>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+                <span>4:44</span>
+              </span>
+            </li>
+            <li class="latest_item">
+              <span class="album_img-box"> </span>
+              <span class="flex flex-col album_data-box">
+                <h5>Onism</h5>
+                <span>AUG 11,2017</span>
+              </span>
+              <span class="flex flex-col album_duration-box">
+                <span>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+                <span>4:44</span>
+              </span>
+            </li>
+          </ul>
+        </section>
+        <section class="popular_artists">
+          <h2 class="sub_heading">Popular Artists</h2>
+          <ul class="popular_artists_list flex">
+            <li class="item_artist flex flex-col">
+              <span class="artist_photo"></span>
+              <span class="artist_name">Ed Sheeran</span>
+            </li>
+            <li class="item_artist flex flex-col">
+              <span class="artist_photo"></span>
+
+              <span class="artist_name">Ed Sheeran</span>
+            </li>
+            <li class="item_artist flex flex-col">
+              <span class="artist_photo"></span>
+
+              <span class="artist_name">Ed Sheeran manjal</span>
+            </li>
+          </ul>
+        </section>
+        <section class="genres flex align-items-center">
+          <figure class="genre-main flex align-items-center">
+            <img
+              class="flex align-items-center"
+              src="./assets/podcast.jpeg"
+              alt="Trulli"
+            />
+            <figcaption></figcaption>
+          </figure>
+
+          <span class="genre_img flex-center">Love</span>
+          <span
+            class="genre_img flex-center"
+            style="background-image: url(./assets/retro-casette.jpg)"
+            >Retro
+          </span>
+          <span
+            class="genre_img flex-center"
+            style="background-image: url(./assets/lofi.jpg)"
+            >Lofi
+          </span>
+
+          <span
+            class="genre_img flex-center"
+            style="background-image: url(./assets/workout.jpg)"
+            >workout
+          </span>
+          <span
+            class="genre_img flex-center"
+            style="background-image: url(./assets/rock.jpg)"
+            >Rock
+          </span>
+          <span
+            class="genre_img flex-center"
+            style="background-image: url(./assets/pop.jpg)"
+            >Pop
+          </span>
+        </section>
+        <section class="categories flex">
+          <div
+            class="category_box flex-center"
+            style="background-image: url(./assets/partying.jpg)"
+          >
+            Party
+          </div>
+          <div
+            class="category_box flex-center"
+            style="background-image: url(./assets/dj.jpg)"
+          >
+            Electronic
+          </div>
+          <div
+            class="category_box flex-center"
+            style="background-image: url(./assets/road-trip.jpg)"
+          >
+            Road Trip
+          </div>
+        </section>
+
+        <section class="latest_english">
+          <h2 class="sub_heading">Latest English</h2>
+          <ul class="latest_songs-list flex">
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+          </ul>
+        </section>
+        <section class="latest_hindi" style="margin-bottom: 100px">
+          <h2 class="sub_heading">Latest Hindi</h2>
+          <ul class="latest_songs-list flex">
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+            <li class="latest_song flex flex-col">
+              <span class="cover_photo"></span>
+              <span class="song_name">Onism</span>
+              <span class="song_release-date">AUG 11,2017</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <aside class="aside queue_section">
+        <div class="queue_heading_box flex">
+          <h2 class="queue_heading">My Playlist</h2>
+
+          <span
+            id="dropdownBtn"
+            class="queue_dropdown-btn flex align-items-center"
+            >Queue<span> <i class="fa fa-angle-down"></i> </span>
+          </span>
+
+          <div id="dropdown-content" class="dropdown-content">
+            <p class="playlist_link">
+              <a href="playlist.html"> Playlists </a>
+            </p>
+            <hr />
+            <p>Favorite Songs</p>
+          </div>
+        </div>
+
+        <ul class="queue_list flex flex-col">
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+          <li class="queue_list-item flex align-items-center">
+            <div class="queue_item-data flex align-items-center">
+              <span class="queue_num">01</span>
+              <span class="queue_img"> </span>
+              <span class="flex flex-col">
+                <h3 class="queue_name">Mirage</h3>
+                <span class="queue_singer">Else</span>
+              </span>
+            </div>
+            <div class="queue_item-action">
+              <i class="far fa-heart"></i>
+            </div>
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <div class="audio-player-box">
+      <!-- <audio controls>
+        <source
+          src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+      <div style="width: 50px; height: 50px"></div> -->
+      <div class="audio-player">
+        <div class="timeline">
+          <div class="progress"></div>
+        </div>
+        <div class="controls">
+          <div class="play-container">
+            <div class="toggle-play play"></div>
+          </div>
+          <div class="time">
+            <div class="current">0:00</div>
+            <div class="divider">/</div>
+            <div class="length"></div>
+          </div>
+          <div class="name">Broken angel</div>
+          <!--     credit for icon to https://saeedalipoor.github.io/icono/ -->
+          <div class="volume-container">
+            <div class="volume-button">
+              <div class="volume">
+                <i
+                  style="display: none"
+                  id="mute-icon"
+                  class="fa fa-volume-up"
+                  aria-hidden="true"
+                ></i>
+                <i id="volume-on-icon" class="fa-solid fa-volume-xmark"></i>
+              </div>
+            </div>
+
+            <div class="volume-slider">
+              <div class="volume-percentage"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/audioplayer.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var dropdownBtn = document.getElementById('dropdownBtn');
+        var dropdownContent = document.getElementById('dropdown-content');
+
+        dropdownBtn.addEventListener('click', function () {
+          console.log('displya ', dropdownContent.style.display);
+          dropdownContent.style.display = 'block';
+          console.log('displya ', dropdownContent.style.display);
+        });
+
+        document.addEventListener('click', function (event) {
+          if (
+            !dropdownBtn.contains(event.target) &&
+            !dropdownContent.contains(event.target)
+          ) {
+            console.log('faflafl');
+            dropdownContent.style.display = 'none';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
