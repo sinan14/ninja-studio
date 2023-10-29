@@ -1,45 +1,66 @@
 .playlist_hero-box {
   max-width: 100%;
   color: white;
-
+  padding: 0 2.4rem;
+  @include respond(phone) {
+    flex-direction: column;
+    padding: 0;
+  }
   .hero_img {
     width: 111%;
-    height: 400px;
+    height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(./../assets/music-band.jpg);
+    @include respond(tab-port) {
+      width: 125%;
+    }
+    @include respond(phone) {
+      width: 100%;
+    }
   }
   .hero_data {
-    padding: 64px 0 64px 24px;
+    padding: 6.4rem 0 6.4rem 2.4rem;
+    @include respond(tab-port) {
+      padding: 3.2rem 0 3.2rem 2.4rem;
+    }
   }
   .hero_heading {
     justify-content: space-between;
-    padding-right: 16px;
-    margin-bottom: 6px;
+    padding-right: 1.6rem;
+    margin-bottom: 0.6rem;
     h2 {
       font-weight: 600;
-      font-size: 24px;
+      font-size: 2.4rem;
+      @include respond(tab-port) {
+        font-size: 3rem;
+      }
     }
-    h6 {
-      font-size: 14px;
-      color: rgb(189, 171, 171);
+  }
+  .hero_heading h6,
+  .hero_subscript {
+    font-size: 1.4rem;
+    color: rgb(189, 171, 171);
+    @include respond(tab-port) {
+      font-size: 1.6rem;
     }
   }
   .hero_subscript {
-    color: rgb(189, 171, 171);
-    margin-bottom: 8px;
-
-    font-size: 14px;
+    margin-bottom: 0.8rem;
   }
   .hero_description {
     color: #b8b6b6;
-    font-size: 14px;
-    margin-bottom: 48px;
+    font-size: 1.4rem;
+    margin-bottom: 4.8rem;
+    @include respond(tab-port) {
+      font-size: 1.8rem;
+      margin-bottom: 4rem;
+    }
   }
   .hero_action {
-    gap: 32px;
-    margin-bottom: 12px;
+    gap: 3.2rem;
+    margin-bottom: 1.2rem;
     button {
       border: none;
       padding: 10px 32px;
@@ -47,6 +68,9 @@
       color: white;
       letter-spacing: 0.5px;
       font-size: 13.5px;
+      @include respond(tab-port) {
+        font-size: 1.6rem;
+      }
     }
   }
   button.playall {
@@ -60,6 +84,9 @@
   .album_count {
     color: lightgray;
     font-size: 12.5px;
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+    }
   }
 }
 

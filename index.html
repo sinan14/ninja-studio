@@ -4,30 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ninja Studio</title>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/amazon-music-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+
     <script
       src="https://kit.fontawesome.com/b3348ae33f.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
-      <div class="side_left">
+      <div class="side_left flex align-items-center">
         <div class="logo_box">
-          <img
-            src="./assets/icons8-amazon-music-144.png"
-            class="logo"
-            alt="logo"
-          />
+          <img src="./assets/amazon-music-icon.png" class="logo" alt="logo" />
           <span class="logo_name">Ninja Studio</span>
         </div>
         <nav class="nav"><span>Favorites</span></nav>
       </div>
-      <div class="side_right">
-        <div id="search-bar">
-          <i id="search-icon" class="fa fa-search"></i>
-          <input id="search-input" placeholder="Search" />
-          <i id="mic-icon" class="fa-solid fa-microphone"></i>
+      <div class="side_right_phone flex align-items-center">
+        <span>
+          <i class="fa fa-search search-icon"></i>
+        </span>
+        <span class="bell_icon">
+          <i class="fa-solid fa-bell red_dot"></i>
+        </span>
+      </div>
+      <div class="side_right flex align-items-center">
+        <div class="search-bar">
+          <i class="fa fa-search search-icon"></i>
+          <input class="search-input" placeholder="Search" />
+          <i class="fa-solid fa-microphone mic-icon"></i>
         </div>
         <span class="bell_icon">
           <i class="fa-solid fa-bell red_dot"></i>
@@ -125,45 +136,65 @@
 
               <span class="artist_name">Ed Sheeran manjal</span>
             </li>
+            <li class="item_artist flex flex-col">
+              <span class="artist_photo"></span>
+              <span class="artist_name">Ed Sheeran</span>
+            </li>
+            <li class="item_artist flex flex-col">
+              <span class="artist_photo"></span>
+
+              <span class="artist_name">Ed Sheeran</span>
+            </li>
+            <li class="item_artist flex flex-col">
+              <span class="artist_photo"></span>
+              <span class="artist_name">Ed Sheeran</span>
+            </li>
+            <li class="item_artist flex flex-col">
+              <span class="artist_photo"></span>
+
+              <span class="artist_name">Ed Sheeran</span>
+            </li>
           </ul>
         </section>
-        <section class="genres flex align-items-center">
-          <figure class="genre-main flex align-items-center">
-            <img
-              class="flex align-items-center"
-              src="./assets/podcast.jpeg"
-              alt="Trulli"
-            />
-            <figcaption></figcaption>
-          </figure>
+        <section class="genres">
+          <div class="flex align-items-center genre_box">
+            <figure class="genre-main flex align-items-center">
+              <img
+                class="flex align-items-center"
+                src="./assets/podcast.jpeg"
+                alt="Trulli"
+              />
+              <figcaption></figcaption>
+            </figure>
 
-          <span class="genre_img flex-center">Love</span>
-          <span
-            class="genre_img flex-center"
-            style="background-image: url(./assets/retro-casette.jpg)"
-            >Retro
-          </span>
-          <span
-            class="genre_img flex-center"
-            style="background-image: url(./assets/lofi.jpg)"
-            >Lofi
-          </span>
+            <span class="genre_img flex-center">Love</span>
+            <span
+              class="genre_img flex-center"
+              style="background-image: url(./assets/retro-casette.jpg)"
+              >Retro
+            </span>
+            <span
+              class="genre_img flex-center"
+              style="background-image: url(./assets/lofi.jpg)"
+              >Lofi
+            </span>
 
-          <span
-            class="genre_img flex-center"
-            style="background-image: url(./assets/workout.jpg)"
-            >workout
-          </span>
-          <span
-            class="genre_img flex-center"
-            style="background-image: url(./assets/rock.jpg)"
-            >Rock
-          </span>
-          <span
-            class="genre_img flex-center"
-            style="background-image: url(./assets/pop.jpg)"
-            >Pop
-          </span>
+            <span
+              class="genre_img flex-center"
+              style="background-image: url(./assets/workout.jpg)"
+              >workout
+            </span>
+            <span
+              class="genre_img flex-center"
+              style="background-image: url(./assets/rock.jpg)"
+              >Rock
+            </span>
+            <span
+              class="genre_img flex-center"
+              style="background-image: url(./assets/pop.jpg)"
+              >Pop
+            </span>
+          </div>
         </section>
         <section class="categories flex">
           <div
@@ -478,27 +509,5 @@
     </div>
     <script src="./js/carousel.js"></script>
     <script src="./js/audioplayer.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var dropdownBtn = document.getElementById('dropdownBtn');
-        var dropdownContent = document.getElementById('dropdown-content');
-
-        dropdownBtn.addEventListener('click', function () {
-          console.log('displya ', dropdownContent.style.display);
-          dropdownContent.style.display = 'block';
-          console.log('displya ', dropdownContent.style.display);
-        });
-
-        document.addEventListener('click', function (event) {
-          if (
-            !dropdownBtn.contains(event.target) &&
-            !dropdownContent.contains(event.target)
-          ) {
-            console.log('faflafl');
-            dropdownContent.style.display = 'none';
-          }
-        });
-      });
-    </script>
   </body>
 </html>

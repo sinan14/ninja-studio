@@ -56,12 +56,24 @@ main {
   padding: 0 128px;
   // margin-top: 124px;
   grid-template-columns: repeat(20, 1fr);
+  @include respond(tab-port) {
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
 }
 .container {
   grid-column: 1/16;
+  @include respond(tab-port) {
+    grid-column: 1/-1;
+    width: 100vw;
+  }
 }
 .aside {
   grid-column: 16/-1;
+  @include respond(tab-port) {
+    grid-column: 1/-1;
+  }
 }
 .flex {
   display: flex;

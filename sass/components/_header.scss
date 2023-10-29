@@ -5,6 +5,9 @@
   height: 124px;
   align-items: center;
   justify-content: space-between;
+  @include respond(tab-port) {
+    padding: 3rem 2.4rem;
+  }
 }
 .logo {
   &_box {
@@ -18,10 +21,11 @@
   border-radius: 50%;
   width: 64px;
 }
-.side_left,
+
 .side_right {
-  display: flex;
-  align-items: center;
+  @include respond(phone) {
+    display: none;
+  }
 }
 .side {
   &_left {
@@ -34,12 +38,15 @@
 .nav {
   display: flex;
   align-items: center;
+  @include respond(phone) {
+    display: none;
+  }
 }
-#search-bar {
+.search-bar {
   position: relative;
 }
 
-#search-input {
+.search-input {
   border: none;
 
   line-height: 2rem;
@@ -58,7 +65,7 @@
   }
 }
 
-#search-icon {
+.search-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -66,7 +73,7 @@
   padding: 0.4rem 1rem;
 }
 
-#mic-icon {
+.mic-icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -91,4 +98,16 @@
   height: 8px;
   right: 0;
   top: 3px;
+}
+.side_right_phone {
+  display: none;
+  @include respond(phone) {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .search-icon {
+    position: static;
+    margin: 0;
+    font-size: 2.4rem;
+  }
 }

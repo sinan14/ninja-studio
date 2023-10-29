@@ -6,21 +6,52 @@ section.latest_hindi,
 section.categories {
   // width: 900px;
   margin-right: 96px;
+  @include respond(tab-port) {
+    margin-right: 0;
+  }
 }
 
-section.latest_release {
+.latest_release {
   color: #fff;
   margin-top: 32px;
   padding-right: 96px;
-  .latest_list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+  @include respond(tab-port) {
+    padding: 0 2.4rem;
+    width: 100vw;
   }
-  .latest_item {
-    display: grid;
-    grid-template-columns: 30% 50% 20%;
-    // background: red;
+}
+.latest_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @include respond(tab-port) {
+    grid-template-columns: repeat(auto-fill, minmax(40%, 3fr));
+    grid-auto-columns: minmax(40%, 3fr);
+    grid-auto-flow: column;
+    white-space: nowrap;
+    overflow-x: auto;
+    width: 100%;
+  }
+  @include respond(phone) {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 3fr));
+    grid-auto-columns: minmax(30%, 3fr);
+  }
+}
+.latest_item {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  @include respond(tab-port) {
+    padding: 2rem 0;
+  }
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
 .album_img-box {
@@ -30,11 +61,29 @@ section.latest_release {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(./../assets/naattu.jpg);
+  @include respond(tab-port) {
+    width: 9rem;
+    border-radius: 0.2rem;
+    height: 9rem;
+  }
 }
 .album_data-box,
 .album_duration-box {
   justify-content: center;
   align-items: flex-start;
+}
+.album_duration-box {
+  @include respond(phone) {
+    flex-direction: row;
+    gap: 0.4rem;
+  }
+}
+.album_duration-box,
+.album_data-box {
+  @include respond(tab-port) {
+    font-size: 1.6rem;
+    justify-content: center;
+  }
 }
 
 .sub_heading {

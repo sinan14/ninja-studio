@@ -1,21 +1,44 @@
 .playlist_body {
   .container {
-    padding-right: 48px;
+    padding-right: 4.8rem;
+    @include respond(tab-port) {
+      padding: 1rem;
+    }
+  }
+  .queue_list {
+    padding: 0;
   }
   .playlist_songs {
-    margin-top: 20px;
+    margin-top: 2rem;
     color: white;
+    padding: 0 2.4rem 3rem;
+    @include respond(phone) {
+      padding: 0;
+    }
   }
   .playlist_song-box {
     background-color: #191d31;
-    padding: 9px 10px;
-    .queue_item-action {
-      gap: 24px;
-      padding-right: 32px;
-    }
+    padding: 1rem;
     color: #333;
-    .queue_name {
-      color: white;
+    @include respond(tab-port) {
+      padding: 1.2rem;
+    }
+    @include respond(phone) {
+      padding: 1rem;
+    }
+  }
+  .queue_name {
+    color: white;
+  }
+  .queue_item-action {
+    gap: 2.4rem;
+    padding-right: 3.2rem;
+    @include respond(tab-port) {
+      font-size: 2.4rem;
+    }
+    @include respond(phone) {
+      padding: 0.6rem;
+      font-size: 1.8rem;
     }
   }
 }

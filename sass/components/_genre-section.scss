@@ -1,13 +1,21 @@
 // genres
 
-section.genres {
+.genres {
+  @include respond(tab-port) {
+    margin: 3rem 2.4rem 0 !important;
+  }
+}
+.genre_box {
+  gap: 12px;
+  overflow-x: auto;
   margin-top: 32px;
   height: 140px;
   background-color: #080f41;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .genre_img {

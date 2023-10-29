@@ -2,15 +2,20 @@ section.latest_english,
 section.latest_hindi {
   color: white;
   margin-top: 32px;
-  overflow: hidden;
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 3.2rem 2.4rem 0;
+  }
 }
 
 .latest_songs-list {
   gap: 12px;
   overflow-x: auto; /* Use 'auto' instead of 'scroll' */
   white-space: nowrap; /* Prevent items from wrapping to new lines */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   &::-webkit-scrollbar {
-    display: none; /* Hide the default scrollbar */
+    display: none;
   }
   .latest_song {
     flex: 0 0 128px;
@@ -26,6 +31,12 @@ section.latest_hindi {
     font-weight: 400;
     color: lightgray;
   }
+  .song_name,
+  .song_release-date {
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
+  }
   .cover_photo {
     width: 128px;
     height: 120px;
@@ -33,6 +44,10 @@ section.latest_hindi {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(./../assets/faded.jpg);
+    @include respond(tab-port) {
+      width: 15rem;
+      height: 14.4rem;
+    }
   }
 }
 .flex-center {
