@@ -253,7 +253,7 @@ main {
 .carousel-item {
   position: absolute;
   width: 100%;
-  height: 30rem;
+  height: 38rem;
   border: 1px solid #2e2e2e;
   top: 0;
   left: 100%;
@@ -264,20 +264,27 @@ main {
 }
 .carousel-item div {
   height: 100%;
+  background-size: contain;
 }
 
-.red {
+.second {
   background-image: url(./../assets/s1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.green {
+.third {
   background-image: url(./../assets/s2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.first {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg);
+}
+
+.fourth {
+  background-image: url(https://cdn.pixabay.com/photo/2014/12/12/10/49/music-565244_1280.jpg);
+}
+
+.fifth {
+  background-image: url(https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495_1280.jpg);
 }
 
 section.latest_release,
@@ -415,13 +422,13 @@ section.categories {
 
 .popular_artists_list {
   gap: 12px;
+  overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 @media only screen and (max-width: 56.25em) {
   .popular_artists_list {
     width: 100%;
-    overflow-x: auto;
   }
 }
 .popular_artists_list::-webkit-scrollbar {
@@ -508,6 +515,7 @@ section.categories {
 .categories {
   margin-top: 32px;
   justify-content: space-between;
+  overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -515,7 +523,6 @@ section.categories {
   .categories {
     width: 100vw;
     padding: 0 2.4rem;
-    overflow-x: auto;
   }
 }
 .categories::-webkit-scrollbar {

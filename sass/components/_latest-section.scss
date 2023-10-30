@@ -10,6 +10,8 @@ section.latest_hindi {
 
 .latest_songs-list {
   gap: 12px;
+  // width: calc(100%-96px);
+
   overflow-x: auto; /* Use 'auto' instead of 'scroll' */
   white-space: nowrap; /* Prevent items from wrapping to new lines */
   -ms-overflow-style: none;

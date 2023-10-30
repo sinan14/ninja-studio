@@ -14,7 +14,7 @@
 .carousel-item {
   position: absolute;
   width: 100%;
-  height: 30rem;
+  height: 38rem;
   border: 1px solid #2e2e2e;
   top: 0;
   left: 100%;
@@ -24,18 +24,22 @@
   }
   div {
     height: 100%;
+    background-size: contain;
   }
 }
-.red {
-  background-image: url(./../assets/s1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.green {
-  background-image: url(./../assets/s2.jpg);
 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.second {
+  background-image: url(./../assets/s1.jpg);
+}
+.third {
+  background-image: url(./../assets/s2.jpg);
+}
+.first {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg);
+}
+.fourth {
+  background-image: url(https://cdn.pixabay.com/photo/2014/12/12/10/49/music-565244_1280.jpg);
+}
+.fifth {
+  background-image: url(https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495_1280.jpg);
 }

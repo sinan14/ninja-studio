@@ -14,8 +14,8 @@
   gap: 12px;
   @include respond(tab-port) {
     width: 100%;
-    overflow-x: auto;
   }
+  overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
   &::-webkit-scrollbar {

@@ -4,8 +4,8 @@
   @include respond(tab-port) {
     width: 100vw;
     padding: 0 2.4rem;
-    overflow-x: auto;
   }
+  overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
   &::-webkit-scrollbar {
